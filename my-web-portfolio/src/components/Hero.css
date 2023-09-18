@@ -12,3 +12,7 @@
 .box-3 {
    background-color: #252627;
 }
+.invert {
+   /* The invert effect */
+   mix-blend-mode: exclusion;
+}
