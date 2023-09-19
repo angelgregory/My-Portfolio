@@ -9,13 +9,13 @@ const Hero = () => {
    return (
       <div className="">
          <Navbar />
-         <div className="grid grid-cols-1 md:grid-cols-2 hero h-[90vh]">
-            <div className="flex justify-center col-span-1 h-[90vh] relative px-10 ">
+         <div className="grid grid-cols-1 md:grid-cols-2 hero  h-screen xl:h-[90vh]">
+            <div className="flex justify-center col-span-1 h-screen xl:h-[90vh] relative px-10 ">
                <div className="md:w-[25vw] h-[90vh]">
                   <img
                      src={myPic}
                      alt=""
-                     className="md:absolute h-[90vh] object-scale-down bottom-0"
+                     className="md:absolute h-[90vh] transform-none object-contain object-bottom"
                   />
                </div>
                <div className="w-[25vw] relative">
@@ -23,7 +23,7 @@ const Hero = () => {
                      viewBox="0 0 240 875"
                      fill="none"
                      xmlns="http://www.w3.org/2000/svg"
-                     className=" content-center max-h-[90vh] pb-24 md:max-h-[70vh] pt-[10vh] absolute invert md:right-0"
+                     className=" content-center max-h-[90vh] pb-24 md:max-h-[70vh] mt-[10vh] absolute invert md:right-0"
                   >
                      <g id="Makayama ing Bie">
                         <g id="ka">
@@ -216,8 +216,8 @@ const Hero = () => {
                   className="max-h-[90vh] object-scale-down "
                /> */}
             </div>
-            <div className="col-span-1 h-screen md:h-[90vh]">
-               <div className="flex items-center h-[75vh] px-10 gap-10">
+            <div className="col-span-1 h-[70vh]">
+               <div className="flex items-center h-[70vh] px-10 gap-10">
                   {/* <div>
                      <img src={makayama} alt="" className="" />
                   </div> */}
@@ -239,29 +239,47 @@ const Hero = () => {
                      </p>
                   </div>
                </div>
-               <div className="md:flex justify-end gap-10 md:h-[15vh]">
-                  <div className="hidden flex lg:flex-col align-middle text-end self-center px-10">
-                     <p className="text-gray-800 font-normal text-xl">
+               <div className="xl:h-[20vh] xl:flex">
+                  <div className="text-end mr-10 self-center text-xl">
+                     <p className="text-gray-800 font-normal  pl-52 md:pl-0">
+                        Makayama ing Bie - bie mangasikanan, kababan-a-lub,
+                        ampong kapibabatan
+                     </p>
+
+                     <p className="text-gray-800 font-medium ">-Greg</p>
+                  </div>
+                  <ul className="flex justify-end ">
+                     <li className="box box-1 text-white relative">
+                        <h1 className="icons">
+                           <FaFacebookF className="icon" />
+                        </h1>
+                     </li>
+                     <li className="box box-2 text-white relative">
+                        <h1 className="icons">
+                           <FaLinkedinIn className="icon" />
+                        </h1>
+                     </li>
+                     <li className="box box-3 text-white relative">
+                        <h1 className="icons">
+                           <FaGithub className="icon" />
+                        </h1>
+                     </li>
+                  </ul>
+               </div>
+
+               {/* <div className="grid grid-cols-1 xl:grid-cols-3 xl:h-[10vh]">
+                  <div className="pr-10 lg:flex-col text-end self-end pb-10 h-[10vh]">
+                     <p className="text-gray-800 font-normal text-base pl-52 md:pl-0">
                         Makayama ing Bie - bie mangasikanan, kababan-a-lub,
                         ampong kapibabatan
                      </p>
                      <br />
-                     <p className="text-gray-800 font-medium text-xl">-Greg</p>
+                     <p className="text-gray-800 font-medium text-base">
+                        -Greg
+                     </p>
                   </div>
-                  <div className="flex justify-end">
-                     <ul className="flex gap-1">
-                        <li className="box box-1 text-white flex  justify-center py-8">
-                           <FaFacebookF size={100} />
-                        </li>
-                        <li className="box box-2 text-white flex  justify-center py-8">
-                           <FaLinkedinIn size={100} />
-                        </li>
-                        <li className="box box-3 text-white flex  justify-center py-8">
-                           <FaGithub size={100} />
-                        </li>
-                     </ul>
-                  </div>
-               </div>
+                  
+               </div> */}
             </div>
          </div>
       </div>

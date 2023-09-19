@@ -1,10 +1,31 @@
 .box {
-   width: 15vh;
-   padding-bottom: 15vh;
-   height: 15vh;
+   width: 10vh;
+   height: 10vh;
+}
+.icon{
+   font-size: 2.5rem;
+}
+h1.icons {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 10vh;
+}
+@media (min-width: 1280px) {
+   .box {
+      width: 20vh;
+
+      height: 20vh;
+   }
+   h1.icons {
+      height: 20vh;
+   }
+   .icon{
+      font-size: 4.5rem;
+   }
 }
 .box-1 {
-   background-color: #bb0a21;
+   background-color: #1a67a7;
 }
 .box-2 {
    background-color: #4b88a2;
@@ -15,4 +36,10 @@
 .invert {
    /* The invert effect */
    mix-blend-mode: exclusion;
+}
+.icons {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 20vh;
 }
