@@ -9,8 +9,8 @@ const Hero = () => {
    return (
       <div className="">
          <Navbar />
-         <div className="grid grid-cols-1 md:grid-cols-2 hero  h-screen xl:h-[90vh]">
-            <div className="flex justify-center col-span-1 h-screen xl:h-[90vh] relative px-10 ">
+         <div className="grid grid-cols-1 md:grid-cols-2 hero xl:h-[90vh]">
+            <div className="flex justify-center col-span-1  xl:h-[90vh] relative px-10 ">
                <div className="md:w-[25vw] h-[90vh]">
                   <img
                      src={myPic}
@@ -18,7 +18,7 @@ const Hero = () => {
                      className="md:absolute h-[90vh] transform-none object-contain object-bottom"
                   />
                </div>
-               <div className="w-[25vw] relative">
+               <div className="w-[25vw] h-[90vh] relative">
                   <svg
                      viewBox="0 0 240 875"
                      fill="none"
@@ -216,7 +216,7 @@ const Hero = () => {
                   className="max-h-[90vh] object-scale-down "
                /> */}
             </div>
-            <div className="col-span-1 h-[70vh]">
+            <div className="col-span-1 h-screen md:h-[70vh]">
                <div className="flex items-center h-[70vh] px-10 gap-10">
                   {/* <div>
                      <img src={makayama} alt="" className="" />
@@ -245,10 +245,9 @@ const Hero = () => {
                         Makayama ing Bie - bie mangasikanan, kababan-a-lub,
                         ampong kapibabatan
                      </p>
-
                      <p className="text-gray-800 font-medium ">-Greg</p>
                   </div>
-                  <ul className="flex justify-end ">
+                  <ul className="flex justify-end pr-10 xl:pr-0">
                      <li className="box box-1 text-white relative">
                         <h1 className="icons">
                            <FaFacebookF className="icon" />
