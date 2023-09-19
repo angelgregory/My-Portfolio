@@ -12,7 +12,7 @@ const Navbar = () => {
    return (
       <div>
          <header className=" text-rose-800 font-bold">
-            <nav className="flex h-[10vh] px-10 items-center justify-end animate__animated animate__fadeInDown animate__faster">
+            <nav className="flex h-[10vh]  px-10 items-center justify-end animate__animated animate__fadeInDown animate__faster ">
                <div className="hidden md:flex gap-8 ">
                   {navLists.map((item, index) => (
                      <ul key={index} className="list-item   hover:underline ">
@@ -30,7 +30,7 @@ const Navbar = () => {
                      className={
                         !nav
                            ? "fixed pt-16 right-0 top-0 text-right animate__animated animate__fadeInRight animate__faster"
-                           : "fixed right-[100%]"
+                           : "fixed right-[100%] "
                      }
                   >
                      {navLists.map((item, index) => (

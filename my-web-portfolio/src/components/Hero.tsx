@@ -1,29 +1,25 @@
-import { useState } from "react";
-import Navbar from "./Navbar";
-import makayama from "../assets/makayama.svg";
 import myPic from "../assets/greyscale-dark.png";
 import "./Hero.css";
 import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import "animate.css";
 
 const Hero = () => {
    return (
       <div className="">
-         <Navbar />
+         {/* MY IAMGE SECTION */}
          <div className="grid grid-cols-1 md:grid-cols-2 hero xl:h-[90vh]">
-            <div className="flex justify-center col-span-1  xl:h-[90vh] relative px-10 ">
-               <div className="md:w-[25vw] h-[90vh]">
+            <div className="flex col-span-1 items-center xl:h-[90vh] relative ">
+               <div className="flex justify-between md:w-[25vw] h-[90vh] ">
                   <img
                      src={myPic}
                      alt=""
-                     className="md:absolute h-[90vh] transform-none object-contain object-bottom"
+                     className="md:absolute h-[90vh] transform-none object-contain object-bottom xl:left-10"
                   />
-               </div>
-               <div className="w-[25vw] h-[90vh] relative">
                   <svg
                      viewBox="0 0 240 875"
                      fill="none"
                      xmlns="http://www.w3.org/2000/svg"
-                     className=" content-center max-h-[90vh] pb-24 md:max-h-[70vh] mt-[10vh] absolute invert md:right-0"
+                     className=" max-h-[90vh] pb-24 md:max-h-[70vh] mt-[10vh] absolute invert min-w-fit right-0 xl:right-24"
                   >
                      <g id="Makayama ing Bie">
                         <g id="ka">
@@ -210,17 +206,10 @@ const Hero = () => {
                      </g>
                   </svg>
                </div>
-               {/* <img
-                  src={makayama}
-                  alt=""
-                  className="max-h-[90vh] object-scale-down "
-               /> */}
+               <div className="h-[90vh] relative"></div>
             </div>
             <div className="col-span-1 h-screen md:h-[70vh]">
                <div className="flex items-center h-[70vh] px-10 gap-10">
-                  {/* <div>
-                     <img src={makayama} alt="" className="" />
-                  </div> */}
                   <div className="text-end self-center">
                      <div className="text-rose-800 font-bold">
                         <h2 className="text-3xl">ANGEL GREGORY</h2>
@@ -239,8 +228,9 @@ const Hero = () => {
                      </p>
                   </div>
                </div>
+               {/* ABOUT-SECTION */}
                <div className="xl:h-[20vh] xl:flex">
-                  <div className="text-end mr-10 self-center text-xl">
+                  <div className="text-end mr-10 self-center 2xl:text-xl">
                      <p className="text-gray-800 font-normal  pl-52 md:pl-0">
                         Makayama ing Bie - bie mangasikanan, kababan-a-lub,
                         ampong kapibabatan
@@ -253,7 +243,7 @@ const Hero = () => {
                            <FaFacebookF className="icon" />
                         </h1>
                      </li>
-                     <li className="box box-2 text-white relative">
+                     <li className="box box-2 text-white relative ">
                         <h1 className="icons">
                            <FaLinkedinIn className="icon" />
                         </h1>
@@ -265,20 +255,6 @@ const Hero = () => {
                      </li>
                   </ul>
                </div>
-
-               {/* <div className="grid grid-cols-1 xl:grid-cols-3 xl:h-[10vh]">
-                  <div className="pr-10 lg:flex-col text-end self-end pb-10 h-[10vh]">
-                     <p className="text-gray-800 font-normal text-base pl-52 md:pl-0">
-                        Makayama ing Bie - bie mangasikanan, kababan-a-lub,
-                        ampong kapibabatan
-                     </p>
-                     <br />
-                     <p className="text-gray-800 font-medium text-base">
-                        -Greg
-                     </p>
-                  </div>
-                  
-               </div> */}
             </div>
          </div>
       </div>
