@@ -31,7 +31,7 @@ const Hero = () => {
                      overflow="visible"
                      fill="none"
                      xmlns="http://www.w3.org/2000/svg"
-                     className=" max-h-[90vh] pb-[18vh] md:max-h-[70vh] mt-[10vh] absolute invert min-w-fit right-0 xl:right-28 z-10 fade-in"
+                     className="max-h-[50vh] lg:max-h-[50vh] pb-[18vh] xl:max-h-[70vh] mt-[10vh] absolute invert min-w-fit right-[10vw] top-[20%] md:top-0 md:right-0 xl:right-28 z-10 fade-in"
                   >
                      <g id="makayama" clip-path="url(#clip0_72_103)">
                         <g id="Ma1_1_" className="ma">
